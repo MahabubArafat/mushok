@@ -40,7 +40,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li>
                 <a
-                  href="./contact.html"
+                  href="{{ url_for('contact') }}"
                   title=""
                   class="btn btn-default navbar-btn"
                   >Contact Us</a
@@ -256,13 +256,14 @@
             <div class="section-container-spacer">
               <h2 class="text-center">Get in touch</h2>
             </div>
-            <form action="">
+            <form action="submit_form" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                     <input
                       type="text"
                       name="name"
+                      id="name"
                       class="form-control"
                       placeholder="Name"
                     />
@@ -273,6 +274,7 @@
                     <input
                       type="email"
                       name="email"
+                      id="email"
                       class="form-control"
                       placeholder="Email"
                     />
@@ -283,6 +285,7 @@
               <div class="form-group">
                 <textarea
                   class="form-control"
+                  name="message"
                   rows="3"
                   placeholder="Enter your message"
                 ></textarea>
@@ -329,8 +332,11 @@
           <div class="col-md-4">
             <h4>About us</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
-              amet consectetur dolor
+              We are a team of Some Kids with Big Dreams in their eyes to
+              Dedicate Their Life for the betterment of our beloved
+              <span style="color: green">BAN</span
+              ><span style="color: red">GLA</span
+              ><span style="color: green">DESH</span>.
             </p>
           </div>
 
@@ -351,18 +357,7 @@
             </div>
             <div>
               <p>
-                <small
-                  >© Untitled | Website created with
-                  <a
-                    href="http://www.mashup-template.com/"
-                    title="Create website with free html template"
-                    >Mashup Template</a
-                  >/<a
-                    href="https://www.unsplash.com/"
-                    title="Beautiful Free Images"
-                    >Unsplash</a
-                  ></small
-                >
+                <small>© Digital Mushok Team 2021</small>
               </p>
             </div>
           </div>
